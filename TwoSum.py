@@ -21,3 +21,6 @@ while left <= right:
         break
 if left > right:
     print("No such pair found")
+
+#Time complexity: O(nlogn) for sorting and O(n) for the two pointer approach, so overall O(nlogn)
+#Space complexity: O(1) since we are using only a constant amount of space for the pointers and variables.
