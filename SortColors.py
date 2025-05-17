@@ -1,5 +1,19 @@
 nums = [2, 0, 2, 1, 1, 0]
+i = 0
+j= 0
+k = len(nums) - 1
 
-final = [i for i in nums if i == 0] + [i for i in nums if i == 1] + [i for i in nums if i == 2]
+while i <= k:
+  if nums[i] == 0:
+    nums[j], nums[i] = nums[i], nums[j]
 
-print(final)
+    i += 1
+    j += 1
+  elif nums[i] == 1:
+    i += 1
+  
+  else:
+    nums[j], nums[k] = nums[k], nums[j]
+    k -= 1
+
+print(nums)
