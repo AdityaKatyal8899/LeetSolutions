@@ -1,5 +1,5 @@
 class Solution:
-  def myPow(self, x: float, n: int) -> float:
+  def myPow(self, x: float, n: float) -> float:
 
     if n == 0 or x == 1:
       return 1
@@ -15,4 +15,4 @@ class Solution:
   
 solution = Solution()
 
-print(solution.myPow(2, 2))
+print(solution.myPow(4, 1))

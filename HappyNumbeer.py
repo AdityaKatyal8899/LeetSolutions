@@ -16,6 +16,22 @@ class Solution:
             return True
         return False
     
+class Solution1:
+        
+    def isHappyy(self, n: int) -> bool:
+        seen = set()
+        while n != 1:
+            if n in seen:
+                return False
+            seen.add(n)
+            n = sum(int(i) ** 2 for i in str(n))
+        
+        return True   
+        
+                
+            
+        
+    
 
 s = Solution()
 print(s.isHappy(19))
